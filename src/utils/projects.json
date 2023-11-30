@@ -1,0 +1,61 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "Training a Deep Convolutional Generative Adversarial Network (DCGAN) on MNIST",
+        "category": "Deep Learning",
+        "stack": ["Python", "TensorFlow"],
+        "source": "https://github.com/sankalpvk18/Training-a-DCGAN-on-MNIST",
+        "image": "dcgan.png"
+      },
+      {
+        "id": 2,
+        "name": "Predicting Housing Prices with Linear Regression",
+        "category": "Machine Learning",
+        "stack": ["Python", "Scikit-Learn"],
+        "source": "https://github.com/sankalpvk18/Housing-Price-Prediction-Linear-Regression",
+        "image": "housing.png"
+      },
+      {
+        "id": 3,
+        "name": "Image Classification using Convolutional Neural Networks (CNN)",
+        "category": "Neural Networks",
+        "stack": ["Python", "Keras"],
+        "source": "https://github.com/sankalpvk18/Image-Classification-CNN",
+        "image": "dcgan.png"
+      },
+      {
+        "id": 4,
+        "name": "Game Playing Problem",
+        "category": "Artificial Intelligence",
+        "stack": ["Python"],
+        "source": "https://github.com/sankalpvk18/Customer-Churn-Prediction-Random-Forest",
+        "image": "nim.png"
+      },
+      {
+        "id": 5,
+        "name": "Heart Attack Analysis & Prediction",
+        "category": "Machine Learning",
+        "stack": ["Python", "Scikit-Learn", "Streamlit"],
+        "source": "https://github.com/sankalpvk18/Heart-Attack-Analysis",
+        "image": "dcgan.png"
+      },
+      {
+        "id": 6,
+        "name": "Clustering and Anomaly Detection in Credit Card Transactions",
+        "category": "Machine Learning",
+        "stack": ["Python", "Scikit-Learn"],
+        "source": "https://github.com/sankalpvk18/Credit-Card-Transaction-Anomaly-Detection",
+        "image": "dcgan.png"
+      },
+      {
+        "id": 7,
+        "name": "Sentiment Analysis using Long Short-Term Memory Networks (LSTM)",
+        "category": "Neural Networks",
+        "stack": ["Python", "Keras"],
+        "source": "https://github.com/sankalpvk18/Sentiment-Analysis-LSTM",
+        "image": "dcgan.png"
+      }
+    ]
+  }
+  
