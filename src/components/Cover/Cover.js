@@ -16,8 +16,8 @@ const Cover = () => {
         </div>
         <div className='total-exp'>
           <div className='exp-item years'>
-            <div className='number'>3.5+</div>
-            <div className='detail'>Full-Stack and Mobile application development Experience</div>
+            <div className='number'>4+</div>
+            <div className='detail'>Work Experience</div>
           </div>
           <div className='exp-item'>
             <div className='number'>20+</div>
