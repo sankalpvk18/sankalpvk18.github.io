@@ -53,8 +53,7 @@ const Dashboard = () => {
             <div className='intro'>
                 <div className='objective'>
                     <blockquote>
-                        As a passionate data scientist with a foundation in web and mobile application development,
-                        I bring over 3.5 years of coding expertise and a fresh perspective to the world of data science, discovering my calling later on but embracing the challenge with unwavering enthusiasm and a commitment to continuous learning and growth.
+                    I'm a passionate Mobile App Developer with expertise in Java and Kotlin, specializing in Android and iOS development. I integrate AI/ML technologies to build innovative, scalable, and user-friendly applications. Let's collaborate to create impactful solutions!
                     </blockquote>
                 </div>
                 <div className='picture'>
