@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Ignore the scene.bin file
-/public/photorealistic-moon/source/scene.bin
+# /public/photorealistic-moon/source/scene.bin
