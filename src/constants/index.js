@@ -19,6 +19,8 @@ import {
   starbucks,
   tesla,
   shopify,
+  duke,
+  divami,
   carrent,
   jobit,
   tripguide,
@@ -42,19 +44,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Mobile App Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AI/ML Specialist",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "X",
     icon: creator,
   },
 ];
@@ -114,60 +116,100 @@ const technologies = [
   },
 ];
 
+// const experiences = [
+//   {
+//     title: "React.js Developer",
+//     company_name: "Starbucks",
+//     icon: starbucks,
+//     iconBg: "#383E56",
+//     date: "March 2020 - April 2021",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+//   {
+//     title: "React Native Developer",
+//     company_name: "Tesla",
+//     icon: tesla,
+//     iconBg: "#E6DEDD",
+//     date: "Jan 2021 - Feb 2022",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+//   {
+//     title: "Web Developer",
+//     company_name: "Shopify",
+//     icon: shopify,
+//     iconBg: "#383E56",
+//     date: "Jan 2022 - Jan 2023",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+//   {
+//     title: "Full stack Developer",
+//     company_name: "Meta",
+//     icon: meta,
+//     iconBg: "#E6DEDD",
+//     date: "Jan 2023 - Present",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+// ];
+
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Data Science Intern",
+    company_name: "Duke.ai",
+    icon: duke,
+    iconBg: "#FFFFF",
+    date: "June 2023 - January 2024",
+    points: [
+      "Optimized the image processing pipeline, boosting document accuracy by 30% and data handling efficiency.",
+      "Implemented NLP techniques for data extraction, improving retrieval accuracy by 25%.",
+      "Used Python & Pandas for data analysis, boosting operational efficiency by 20%.",
+    ],
+  },
+  {
+    title: "Sr. Software Engineer",
+    company_name: "Divami Design Labs",
+    icon: divami,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2019 - June 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Engineered Android and iOS apps for a trucking company, integrating 10+ key features such as SDK management, subscription models, media uploads, and in-app purchases; increased revenue by 45%, reduced crash rates by 60%, and successfully managed app store launches.",
+      "Developed a financial planning Android app using MVVM architecture, leveraging Jetpack components like LiveData and ViewModel to boost codebase efficiency and reusability by 35%, ensuring faster updates and greater scalability.",
+      "Spearheaded a successful iOS development Bootcamp and Hackathon, training 15+ employees and producing 5 new app prototypes, enhancing team skills in Swift and iOS development.",
+      "Managed a team of 3 in delivering a backend project with Spring Boot and React, designing an SQL database, and integrating multiple payment gateways, boosting financial performance by 20%.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Engineer",
+    company_name: "Divami Design Labs",
+    icon: divami,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "October 2018 - June 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to front-end development for a Dubai-based payment gateway solutions provider, implementing multiple features such as enhancing platform security by approximately 32% by integrating reCaptcha.",
+      "Performed troubleshooting to fix critical production bugs and improved the performance of a fitness-tracking Android application.",
     ],
   },
 ];
+
 
 const testimonials = [
   {
