@@ -1,0 +1,33 @@
+.bg-hero-custom {
+    /* background-image: url('/src/assets/herobg.jpg'); */
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 200px);
+    background-position-y: calc(50% - 220px);
+    /* background-position-y: top right; */
+    /* background: 
+    linear-gradient(to right, #15100D 0%, 30.98958432674408%, #2F2B28 61.97916865348816%, 80.98958432674408%, #15100D 100%), */
+    /* background:
+    linear-gradient(to right, rgba(21, 16, 13, 0.5), #151030),
+    url('/src/assets/herobg.jpeg') no-repeat top center; */
+}
+
+/* .page-theme {
+    background:
+        linear-gradient(to right, rgba(21, 16, 13, 0.5), #151030),
+        url('/src/assets/herobg.jpeg') no-repeat top center;
+} */
+
+/* body {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1c1c1c 100%);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><path d="M0 0h800v600H0z" fill="none"/><path d="M400 0h400v600H400zM200 0h200v600H200zM0 0h200v600H0z" fill="%231a1a1a" opacity=".2"/><path d="M0 300h800" stroke="%23333333" stroke-width="2" opacity=".2"/><path d="M0 100h800M0 500h800" stroke="%23333333" stroke-width="1" opacity=".2"/></svg>');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+  } */
+
+body {
+    background: url('/src/assets/herobg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
