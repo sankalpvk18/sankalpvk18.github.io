@@ -50,11 +50,11 @@ const About = () => {
         I'm a passionate Mobile App Developer with expertise in Java and Kotlin, specializing in Android and iOS development. I integrate AI/ML technologies to build innovative, scalable, and user-friendly applications. Let's collaborate to create impactful solutions!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      {/* <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

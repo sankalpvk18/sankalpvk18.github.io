@@ -66,10 +66,10 @@ const services = [
     title: "Full-Stack Developer",
     icon: backend,
   },
-  {
-    title: "X",
-    icon: creator,
-  },
+  // {
+  //   title: "X",
+  //   icon: creator,
+  // },
 ];
 
 // const technologies = [
