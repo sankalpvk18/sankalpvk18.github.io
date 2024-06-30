@@ -1,1 +1,8 @@
-*.bin filter=lfs diff=lfs merge=lfs -text
+# *.bin filter=lfs diff=lfs merge=lfs -text
+
+# Handle line endings for text files
+* text=auto
+
+# Specify binary files (like GLTF files)
+*.gltf binary
+*.bin binary
