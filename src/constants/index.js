@@ -39,7 +39,9 @@ import {
   ai,
   studentswap,
   hackerrank,
-  telco
+  telco,
+  aws,
+  swift
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +56,7 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
+  }
 ];
 
 const services = [
@@ -69,69 +71,76 @@ const services = [
   {
     title: "Full-Stack Developer",
     icon: web,
-  },
-  // {
-  //   title: "X",
-  //   icon: creator,
-  // },
+  }
 ];
 
 // const technologies = [
 //   {
-//     name: "HTML 5",
-//     icon: html,
+//     category: "Cloud and Databases",
+//     items: [
+//       { name: "AWS", icon: aws },
+//       { name: "MongoDB", icon: mongodb },
+//       { name: "MySQL", icon: mysql },
+//       { name: "PostgreSQL", icon: postgresql }
+//     ],
 //   },
 //   {
-//     name: "CSS 3",
-//     icon: css,
+//     category: "Web Development",
+//     items: [
+//       { name: "HTML 5", icon: html },
+//       { name: "CSS 3", icon: css },
+//       { name: "JavaScript", icon: javascript },
+//       { name: "TypeScript", icon: typescript },
+//       { name: "React JS", icon: reactjs },
+//       { name: "Angular", icon: angular },
+//       { name: "Redux Toolkit", icon: redux },
+//       { name: "Tailwind CSS", icon: tailwind },
+//       { name: "Node JS", icon: nodejs },
+//       { name: "Git", icon: git },
+//       { name: "figma", icon: figma }
+//     ],
 //   },
 //   {
-//     name: "JavaScript",
-//     icon: javascript,
+//     category: "Mobile Development",
+//     items: [
+//       { name: "Android (Java/Kotlin)", icon: android },
+//       { name: "iOS (Swift)", icon: apple },
+//       { name: "Java", icon: java },
+//       { name: "Swift", icon: swift},
+//       { name: "Kotlin", icon: kotlin },
+//       { name: "Firebase", icon: firebase }
+//     ],
 //   },
 //   {
-//     name: "TypeScript",
-//     icon: typescript,
-//   },
-//   {
-//     name: "React JS",
-//     icon: reactjs,
-//   },
-//   {
-//     name: "Redux Toolkit",
-//     icon: redux,
-//   },
-//   {
-//     name: "Tailwind CSS",
-//     icon: tailwind,
-//   },
-//   {
-//     name: "Node JS",
-//     icon: nodejs,
-//   },
-//   {
-//     name: "MongoDB",
-//     icon: mongodb,
-//   },
-//   {
-//     name: "Three JS",
-//     icon: threejs,
-//   },
-//   {
-//     name: "git",
-//     icon: git,
-//   },
-//   {
-//     name: "figma",
-//     icon: figma,
-//   },
-//   {
-//     name: "docker",
-//     icon: docker,
+//     category: "AI/ML",
+//     items: [
+//       { name: "Python", icon: python },
+//       { name: "Tensorflow", icon: tensorflow },
+//       { name: "Jupytor Notebook", icon: jupyter },
+//     ],
 //   },
 // ];
 
 const technologies = [
+  {
+    category: "AI/ML",
+    items: [
+      { name: "Python", icon: python },
+      { name: "Tensorflow", icon: tensorflow },
+      { name: "Jupytor Notebook", icon: jupyter },
+    ],
+  },
+  {
+    category: "Mobile Development",
+    items: [
+      { name: "Android (Java/Kotlin)", icon: android },
+      { name: "iOS (Swift)", icon: apple },
+      { name: "Java", icon: java },
+      { name: "Swift", icon: swift},
+      { name: "Kotlin", icon: kotlin },
+      { name: "Firebase", icon: firebase }
+    ],
+  },
   {
     category: "Web Development",
     items: [
@@ -144,186 +153,20 @@ const technologies = [
       { name: "Redux Toolkit", icon: redux },
       { name: "Tailwind CSS", icon: tailwind },
       { name: "Node JS", icon: nodejs },
-      { name: "MongoDB", icon: mongodb },
       { name: "Git", icon: git },
       { name: "figma", icon: figma }
     ],
   },
   {
-    category: "Mobile Development",
+    category: "Cloud and Databases",
     items: [
-      { name: "Android (Java/Kotlin)", icon: android },
-      { name: "iOS (Swift)", icon: apple },
-      { name: "Kotlin", icon: kotlin },
-      { name: "Firebase", icon: firebase },
+      { name: "AWS", icon: aws },
+      { name: "MongoDB", icon: mongodb },
       { name: "MySQL", icon: mysql },
-      { name: "PostgreSQL", icon: postgresql },
+      { name: "PostgreSQL", icon: postgresql }
     ],
-  },
-  {
-    category: "AI/ML",
-    items: [
-      { name: "Python", icon: python },
-      { name: "Tensorflow", icon: tensorflow },
-      { name: "Jupytor Notebook", icon: jupyter },
-      { name: "Java", icon: java },
-    ],
-  },
+  }
 ];
-
-// const technologies = [
-//   {
-//     name: "HTML",
-//     icon: html
-//   },
-//   {
-//     name: "CSS",
-//     icon: css
-//   },
-//   {
-//     name: "JavaScript",
-//     icon: javascript
-//   },
-//   {
-//     name: "TypeScript",
-//     icon: typescript
-//   },
-//   {
-//     name: "React",
-//     icon: reactjs
-//   },
-//   {
-//     name: "Redux",
-//     icon: redux
-//   },
-//   {
-//     name: "Tailwind CSS",
-//     icon: tailwind
-//   },
-//   {
-//     name: "Node.js",
-//     icon: nodejs
-//   },
-//   {
-//     name: "MongoDB",
-//     icon: mongodb
-//   },
-//   {
-//     name: "Git",
-//     icon: git
-//   },
-//   {
-//     name: "Figma",
-//     icon: figma
-//   },
-//   {
-//     name: "Python",
-//     icon: redux
-//   },
-//   {
-//     name: "Kotlin",
-//     icon: redux
-//   },
-//   {
-//     name: "Swift",
-//     icon: redux
-//   },
-//   {
-//     name: "Java",
-//     icon: redux
-//   },
-//   {
-//     name: "Android",
-//     icon: redux
-//   },
-//   {
-//     name: "iOS",
-//     icon: redux
-//   },
-//   {
-//     name: "Firebase",
-//     icon: redux
-//   },
-//   {
-//     name: "MySQL",
-//     icon: redux
-//   },
-//   {
-//     name: "Postman",
-//     icon: redux
-//   },
-//   {
-//     name: "JIRA",
-//     icon: redux
-//   },
-//   {
-//     name: "Angular",
-//     icon: redux
-//   },
-//   {
-//     name: "Agile",
-//     icon: redux
-//   },
-//   {
-//     name: "CI/CD",
-//     icon: redux
-//   },
-// ];
-
-// const experiences = [
-//   {
-//     title: "React.js Developer",
-//     company_name: "Starbucks",
-//     icon: starbucks,
-//     iconBg: "#383E56",
-//     date: "March 2020 - April 2021",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "React Native Developer",
-//     company_name: "Tesla",
-//     icon: tesla,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2021 - Feb 2022",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Web Developer",
-//     company_name: "Shopify",
-//     icon: shopify,
-//     iconBg: "#383E56",
-//     date: "Jan 2022 - Jan 2023",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Full stack Developer",
-//     company_name: "Meta",
-//     icon: meta,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2023 - Present",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-// ];
 
 const experiences = [
   {

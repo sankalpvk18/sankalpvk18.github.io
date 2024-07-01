@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -57,6 +58,15 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li className="list-none hidden sm:flex flex-row gap-10">
+            <a
+              href="/Resume - Sankalp Tripathi.pdf"
+              download="Sankalp_Tripathi_Resume.pdf"
+              className="flex text-white items-center font-bold shadow-md"
+            >
+              <FaDownload className="mr-2" />Download Resume
+            </a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>

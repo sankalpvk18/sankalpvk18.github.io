@@ -32,6 +32,8 @@ import postgresql from './tech/postgresql.svg';
 import mysql from './tech/mysql.svg';
 import java from './tech/java.svg';
 import ai from './ai.png';
+import aws from './tech/aws.svg';
+import swift from './tech/swift.svg';
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -94,5 +96,7 @@ export {
   ai,
   studentswap,
   hackerrank,
-  telco
+  telco,
+  aws,
+  swift
 };
