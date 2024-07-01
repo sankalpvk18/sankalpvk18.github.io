@@ -10,31 +10,43 @@ import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid #232631' }}
+    className="timeline-element"
+    // contentStyle={{ background: '#1d1836', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '10px solid #ffffff', opacity: 0 }}
     date={experience.date}
-    iconStyle={{ background: 'black', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+    // iconStyle={{ background: '#fff', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+    // iconStyle={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+
     icon={
+      <a href={experience.iconURL} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
       <div style={{ fontSize: '32px', color: experience.iconBg }}>
         <img
           src={experience.icon}
           alt={experience.company_name}
-          style={{ width: '100%', height: '100%', borderRadius: '50%', backgroundColor: 'black' }}
+          style={{ width: '100%', height: '100%', borderRadius: '50%', backgroundColor: "#000" }}
         />
       </div>
+      </a>
     }
   >
     <div>
+      {/* <h3 className="text-black text-[24px] font-bold">{experience.title}</h3>
+      <p className="text-black-100 text-[16px] font-bold" style={{ margin: 0 }}>
+        {experience.company_name}
+      </p> */}
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-      <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
+      <p className="text-white-100 opacity-50 text-[16px] font-bold" style={{ margin: 0 }}>
         {experience.company_name}
       </p>
     </div>
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
-        <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">
-          {point}
-        </li>
+        // <li key={`experience-point-${index}`} className="text-black text-[14px] pl-1 tracking-wider">
+        //   {point}
+        // </li>
+         <li key={`experience-point-${index}`} className="text-white text-[14px] pl-1 tracking-wider">
+         {point}
+       </li>
       ))}
     </ul>
   </VerticalTimelineElement>

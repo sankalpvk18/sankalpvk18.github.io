@@ -19,6 +19,18 @@
   display: block;
 }
 
+.blue-text {
+  color: #063871c6;
+}
+
+.red-text {
+  color: #b81034;
+}
+
+.violet-text {
+  color: #230C26;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -65,17 +77,33 @@
   -webkit-text-fill-color: transparent;
 }
 
-.green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
+/* .green-text-gradient {
+  background: #11998e;
   background: -webkit-linear-gradient(
     to top,
     #11998e,
     #38ef7d
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to top,
     #11998e,
     #38ef7d
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.green-text-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #000000,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #000000,
+    #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

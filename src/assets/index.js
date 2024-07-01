@@ -31,6 +31,7 @@ import kotlin from './tech/kotlin.svg';
 import postgresql from './tech/postgresql.svg';
 import mysql from './tech/mysql.svg';
 import java from './tech/java.svg';
+import ai from './ai.png';
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -43,6 +44,10 @@ import divami from "./company/divami.jpeg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import studentswap from './studentswap.png';
+import hackerrank from './hackerrank.png';
+import telco from './telco.png';
 
 export {
   logo,
@@ -85,5 +90,9 @@ export {
   kotlin,
   postgresql,
   mysql,
-  java
+  java,
+  ai,
+  studentswap,
+  hackerrank,
+  telco
 };

@@ -35,7 +35,11 @@ import {
   kotlin,
   mysql,
   postgresql,
-  java
+  java,
+  ai,
+  studentswap,
+  hackerrank,
+  telco
 } from "../assets";
 
 export const navLinks = [
@@ -56,15 +60,15 @@ export const navLinks = [
 const services = [
   {
     title: "Mobile App Developer",
-    icon: web,
-  },
-  {
-    title: "AI/ML Specialist",
     icon: mobile,
   },
   {
+    title: "AI/ML Specialist",
+    icon: ai,
+  },
+  {
     title: "Full-Stack Developer",
-    icon: backend,
+    icon: web,
   },
   // {
   //   title: "X",
@@ -326,7 +330,8 @@ const experiences = [
     title: "Data Science Intern",
     company_name: "Duke.ai",
     icon: duke,
-    iconBg: "black",
+    iconURL: 'https://duke.ai/',
+    iconBg: "white",
     date: "June 2023 - January 2024",
     points: [
       "Optimized the image processing pipeline, boosting document accuracy by 30% and data handling efficiency.",
@@ -339,6 +344,7 @@ const experiences = [
     company_name: "Divami",
     icon: divami,
     iconBg: "#383E56",
+    iconURL: 'https://divami.com/',
     date: "July 2019 - June 2022",
     points: [
       "Engineered Android and iOS apps for a trucking company, integrating 10+ key features such as SDK management, subscription models, media uploads, and in-app purchases; increased revenue by 45%, reduced crash rates by 60%, and successfully managed app store launches.",
@@ -352,6 +358,7 @@ const experiences = [
     company_name: "Divami",
     icon: divami,
     iconBg: "#E6DEDD",
+    iconURL: 'https://divami.com/',
     date: "October 2018 - June 2019",
     points: [
       "Contributed to front-end development for a Dubai-based payment gateway solutions provider, implementing multiple features such as enhancing platform security by approximately 32% by integrating reCaptcha.",
@@ -389,67 +396,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "StudentSwap",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Designing and developing a user-friendly cross-platform mobile application that streamlines the exchange of second-hand goods within the university community.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "reactnative",
+        color: "blue-text",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "firebase",
+        color: "violet-text",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "figma",
+        color: "red-text",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: studentswap,
+    source_code_link: "https://github.com/sankalpvk18/StudentSwap",
   },
   {
-    name: "Job IT",
+    name: "Hackerrank Problem Solutions",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A collection of solutions for Hackerrank coding challenges, showcasing my problem-solving skills and proficiency in programming concepts and algorithms. Includes solutions from basic to advanced levels, covering data structures, algorithms, and more.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "java",
+        color: "blue-text",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "python",
+        color: "violet-text",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "dsa",
+        color: "red-text",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: hackerrank,
+    source_code_link: "https://github.com/sankalpvk18/-hackerRankSolved-",
   },
   {
-    name: "Trip Guide",
+    name: "Telco Churn Model",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Built and optimized machine learning models to identify potential customer churn, achieving an ROC-AUC score of 0.85. Deployed the model with Flask for API access and generated reports.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "blue-text",
       },
       {
-        name: "supabase",
+        name: "flask",
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "pandas",
+        color: "red-text",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: telco,
+    source_code_link: "https://github.com/sankalpvk18/Telco-customer-churn/tree/main",
   },
 ];
 

@@ -17,16 +17,17 @@ const Tech = () => {
     </div>
       
 
-      <div className="flex flex-row mt-20">
+      <div className="flex flex-row justify-center flex-wrap-reverse tech-card">
         {technologies.map((category) => (
-          <div key={category.category} className="w-full mb-10">
-            <h2 className="text-2xl font-bold text-center mb-5">{category.category}</h2>
-            <div className="flex flex-row flex-wrap justify-center gap-10">
+          // className="w-full mb-10 p-20"
+          <div key={category.category} className="p-8">
+            <h2 className="text-2xl font-semibold text-center text-white-200">{category.category}</h2>
+            <div className="flex flex-row flex-wrap justify-center gap-14 gap-y-0">
               {category.items.map((technology) => (
                 <div
                   key={technology.name}
                   className="w-28 h-28 flex items-center justify-center">
-                  <img src={technology.icon} alt={technology.name} className="w-16 h-16" />
+                  <img src={technology.icon} alt={technology.name} className="w-14 h-14" />
                 </div>
               ))}
             </div>
