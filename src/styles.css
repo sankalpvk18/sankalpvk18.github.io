@@ -231,3 +231,51 @@
     -webkit-backdrop-filter: blur(6.5px);
     margin-top: 40px;
   }
+
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .hero-text {
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: -2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .hero-text {
+      text-align: left;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-container {
+      padding: 0 4rem;
+    }
+  
+    .hero-text {
+      margin-right: 4rem;
+    }
+  }
