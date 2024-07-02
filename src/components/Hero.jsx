@@ -1,25 +1,31 @@
 import { motion } from "framer-motion";
+
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
-      <div className="hero-text">
-        <h1 className={`${styles.heroHeadText} text-white`}>
-          Hi, I'm <span className='text-[#BF7AB4]'>Sankalp</span>
-        </h1>
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I build mobile apps,
-          <br className='sm:block hidden' />
-          integrate AI/ML, and
-          <br className='sm:block hidden' />
-          enhance user experiences.
-        </p>
+    <section className={`relative w-full h-screen mx-auto`}>
+      <div
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      >
+
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className='text-[#BF7AB4]'>Sankalp</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I build mobile apps,
+            <br className='sm:block hidden' />
+            integrate AI/ML, and
+            <br className='sm:block hidden' />
+            enhance user experiences.
+          </p>
+        </div>
       </div>
-      <div className="hero-image">
-        <ComputersCanvas />
-      </div>
+
+      <ComputersCanvas />
+
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
@@ -42,20 +48,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const styles = {
-  paddingX: "sm:px-16 px-6",
-  paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-16 py-10",
-  
-  heroHeadText: "font-black text-white lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[80px] mt-2",
-  heroSubText: "text-[#dfd9ff] font-medium lg:text-[28px] sm:text-[24px] xs:text-[20px] text-[18px] lg:leading-[36px] mt-4",
-
-  sectionHeadText: "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
-  sectionSubText: "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
-
-  heroBackground: "bg-hero-custom",
-  techCard: ''
-};
-
-export { styles };
