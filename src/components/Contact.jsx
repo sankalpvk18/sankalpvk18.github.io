@@ -75,7 +75,7 @@ const Contact = () => {
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
-        className='flex-[0.75] bg-[#230C26] p-8 rounded-2xl shadow-2xl shadow-white'
+        className='flex-[0.75] bg-[#230C26] p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
