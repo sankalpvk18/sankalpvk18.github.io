@@ -60,7 +60,7 @@ const Navbar = () => {
           ))}
           <li className="list-none hidden sm:flex flex-row gap-10">
             <a
-              href="Resume - Sankalp Tripathi.pdf"
+              href="Resume.pdf"
               download="Sankalp_Tripathi_Resume.pdf"
               className="flex text-white items-center font-bold shadow-md"
             >
