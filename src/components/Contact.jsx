@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import Overlay from "./Overlay"; // Import the Overlay component
+import Overlay from "./Overlay";
 
 const Contact = () => {
   const formRef = useRef();
