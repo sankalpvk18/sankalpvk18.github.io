@@ -91,6 +91,10 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+
+      <div className='mt-16 text-secondary text-[18px] text-center'>
+        <p>🚀 Exciting new projects are in the works. Check back soon for updates!</p>
+      </div>
     </>
   );
 };
