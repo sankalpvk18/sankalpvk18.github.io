@@ -92,7 +92,7 @@ const Works = () => {
         ))}
       </div>
 
-      <div className='mt-16 text-secondary text-[18px] text-center'>
+      <div className='mt-16 text-secondary text-[18px] text-center italic'>
         <p>🚀 Exciting new projects are in the works. Check back soon for updates!</p>
       </div>
     </>
