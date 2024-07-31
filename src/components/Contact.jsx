@@ -18,6 +18,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const [overlayMessage, setOverlayMessage] = useState("");
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { target } = e;
@@ -29,8 +30,32 @@ const Contact = () => {
     });
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (!form.name.trim()) {
+      newErrors.name = "Name is required.";
+    }
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      newErrors.email = "Email address is invalid.";
+    }
+    if (!form.message.trim()) {
+      newErrors.message = "Message is required.";
+    } else if (form.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters long.";
+    }
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -57,6 +82,7 @@ const Contact = () => {
             email: "",
             message: "",
           });
+          setErrors({});
         },
         (error) => {
           setLoading(false);
@@ -74,17 +100,11 @@ const Contact = () => {
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div
-        className='flex-[0.75] bg-[#230C26] p-8 rounded-2xl'
-      >
+      <motion.div className='flex-[0.75] bg-[#230C26] p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Name</span>
             <input
@@ -94,7 +114,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What’s Your Name?"
               className='bg-[#ffffff] py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
+              required
             />
+            {errors.name && <p className="text-red-500">{errors.name}</p>}
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Email</span>
@@ -105,7 +127,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Best Email to Reach You"
               className='bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
+              required
             />
+            {errors.email && <p className="text-red-500">{errors.email}</p>}
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Message</span>
@@ -116,7 +140,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder='What’s on Your Mind?'
               className='bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
+              required
             />
+            {errors.message && <p className="text-red-500">{errors.message}</p>}
           </label>
 
           <button
@@ -128,9 +154,7 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
+      <motion.div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
       </motion.div>
 
