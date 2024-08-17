@@ -47,6 +47,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import conversational_analytics from './conversational_analytics.png';
 import studentswap from './studentswap.png';
 import hackerrank from './hackerrank.png';
 import telco from './telco.png';
@@ -98,5 +99,6 @@ export {
   hackerrank,
   telco,
   aws,
-  swift
+  swift,
+  conversational_analytics
 };

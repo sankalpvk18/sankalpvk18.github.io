@@ -41,7 +41,8 @@ import {
   hackerrank,
   telco,
   aws,
-  swift
+  swift,
+  conversational_analytics
 } from "../assets";
 
 export const navLinks = [
@@ -238,6 +239,27 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Conversational Analytics",
+    description:
+      "An AI-powered platform that leverages OpenAI’s APIs to generate instant SQL queries, visualize sales trends, and create detailed reports from the Superstore dataset. Deployed on Streamlit Cloud and available as an open-source project.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text",
+      },
+      {
+        name: "streamlit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "red-text",
+      },
+    ],
+    image: conversational_analytics,
+    source_code_link: "https://github.com/sankalpvk18/coversational-analytics",
+  },
   {
     name: "StudentSwap",
     description:
